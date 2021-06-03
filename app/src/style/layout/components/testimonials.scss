@@ -1,0 +1,47 @@
+.testimonials {
+    @include container();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    &__title {
+        font-size: 48px;
+        line-height: 55px;
+        color: #252B42;
+        font-weight: normal;
+        margin-bottom: 90px;
+    }
+
+    &__img {
+        margin-bottom: 60px;
+    }
+
+    &__descr {
+        max-width: 960px;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &_card {
+        display: flex;
+        align-items: center;
+        max-width: 186px;
+        margin-bottom: 80px;
+        &__img {
+            margin-right: 8px;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 23px;
+            color: #374754;
+        }
+        &__title span{
+            font-size: 15px;
+            line-height: 23px;
+            color: #252B42;
+        }
+    }
+}

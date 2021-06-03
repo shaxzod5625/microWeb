@@ -1,0 +1,44 @@
+section.features
+    h2.features_title Features
+    p.features_descr Most calendars are designed for teams. Slate is designed for freelancers
+    .features-card__content
+        .features-card
+            img(src="./images/main-icon_1.webp", alt="")
+            h3.features-card__title OpenType features Variable fonts
+            p.features-card__descr Slate helps you see how many more days you need to work to reach your financial goal.
+        .features-card
+            img(src="./images/main-icon_2.webp", alt="")
+            h3.features-card__title Design with real data
+            p.features-card__descr Slate helps you see how many more days you need to work to reach your financial goal.
+        .features-card
+            img(src="./images/main-icon_3.webp", alt="")
+            h3.features-card__title Fastest way to take action
+            p.features-card__descr Slate helps you see how many more days you need to work to reach your financial goal.
+    .player.j-player 
+        em.fas.fa-pause.player__main-icon.j-pause       
+        em.fas.fa-play.player__main-icon.j-play       
+        video.player_video(src="../video/Devastator.mp4" poster="/images/video-bg.webp")
+        .player__panel 
+            .player__lines.j-line
+                .player__hint.j-hint
+                .player__line.player__line--current.j-line-current
+                .player__line.player__line--ghost.j-line-ghost
+                .player__line.player__line--full
+            .player__panel-block
+                button.player__button.j-toggle-video
+                    em.fas.fa-play
+                button.player__panel-button.player__panel-button--volume
+                    em.fa.player__volume-icon.j-toggle-volume
+                    input.player__volume.j-volume-input(type="range")
+                span.j-duration 0:00
+            .player__panel-block
+                .speed__change-block 
+                    button.speed__change-button.speed__change-button--speed-down
+                        em.fas.fa-chevron-left
+                    button.speed__change-button.speed__change-button--speed-up
+                        em.fas.fa-chevron-double-right
+                button.player__panel-button.j-fullscreen
+                    em.fas.fa-expand
+                    
+                    
+                    //- <i class="fas fa-chevron-double-right"></i>

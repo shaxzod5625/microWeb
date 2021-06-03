@@ -1,0 +1,139 @@
+.contact {
+    @include container();
+    margin-bottom: 150px;
+    &_title {
+        text-align: center;
+        font-size: 48px;
+        line-height: 55px;
+        font-weight: normal;
+        color: #252B42;
+        letter-spacing: 0.2px;
+        margin-bottom: 27px;
+    }
+
+    .contact_content {
+        display: flex;
+        @include media($lg){
+            flex-direction: column;
+        }
+    }
+
+    &_descr {
+        color: #374754;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        max-width: 532px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+    }
+
+    &-left_container {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+        padding: 52px 50px;
+        text-align: center;
+        border: 1px solid #DDDDDD;
+        @include media($lg){
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+            color: #252B42;
+            margin-bottom: 45px;
+        }
+
+        &__input::placeholder {
+            color: #18171D;
+        }
+
+        &__input {
+            background: #F5F5F5;
+            border: 1px solid #E8E8E8;
+            margin-bottom: 45px;
+            border-radius: 39px;
+            padding: 19px 20px;
+            min-width: 353px;
+            width: 100%;
+            outline: none;
+            @include media($sm){
+            min-width: 200px;
+                
+            }
+        }
+
+        &__input:nth-of-type(3) {
+            height: 196px;
+            padding-bottom: 150px;
+            border-radius: 0;
+        }
+
+        &__btn {
+            width: max-content;
+        }
+    }
+
+    .contact-right_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__items {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            @include media($sm){
+                flex-direction: column;
+            }
+        }
+
+        &__icon {
+            color: #2091F9;
+            font-size: 30px;
+            margin-bottom: 32px;
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 23px;
+            color: #374754;
+            max-width: 293px;
+            margin-bottom: 15px;
+            @include media($xl){
+             font-size: 15px;
+            }
+
+        }
+
+        &__map {
+            min-width: 516px;
+            height: 323px;
+            border: none;
+            margin-left: 30px;
+            @include media($xl){
+                min-width: 445px;
+            }
+            @include media($sm){
+                margin-left: 0;
+                min-width: 0;
+            }
+        }
+        .contact-right_container__icons{
+            &___icon {
+                margin-left: 60px;
+                margin-top: 75px;
+                font-size: 40px;
+                color: #2091F9;
+                @include media($sm){
+                    margin-left: 45px;
+                }
+            }
+        }
+    }
+}

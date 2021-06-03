@@ -1,0 +1,158 @@
+.pricing {
+    background: #252B42;
+    display: flex;
+    padding: 110px 140px;
+    align-items: center;
+    margin-bottom: 250px;
+    @include media($sm){
+        margin-bottom: 60px;
+    }
+    &-content {
+        @include container();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &_title {
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 55px;
+        justify-self: center;
+        color: #FFFFFF;
+        margin-bottom: 27px;
+    }
+
+    &_descr {
+        color: #FFFFFF;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        max-width: 530px;
+        margin-bottom: 133px;
+        @include media($md){
+            line-height: 33px;
+        }
+        @include media($sm){
+            line-height: 33px;
+            width: 90vw;
+        }
+    }
+
+    .pricing-cards {
+        display: flex;
+        flex-direction: row;
+        @include media($lg){
+            flex-direction: column;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            margin-right: 50px;
+            padding: 40px;
+            border-radius: 10px;
+            min-width: 335px;
+            transition: 500ms;
+            border: 1px solid #dedede00;
+            @include media($xl){
+            min-width: 280px;
+                
+            }
+            @include media($lg){
+            min-width: 350px;
+                margin-right: 0;
+                margin-bottom: 50px;
+            }
+            @include media($sm){
+                min-width: 280px;
+            }
+            &:hover {
+                background: #2091F9;
+                border: 1px solid #DEDEDE;
+                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                border-radius: 10px;
+                color: white;
+                transform: scale(1.1, 1.1);
+
+                .card_title {
+                    color: white;
+                }
+
+                .pricing-cards_btn {
+                    background: white;
+                    color: #2091F9;
+                }
+            }
+
+            &_title {
+                margin-bottom: 3px;
+                font-size: 16px;
+                line-height: 23px;
+                font-weight: bold;
+                color: #252B42;
+                transition: 500ms;
+            }
+
+            &_descr {
+                margin-bottom: 30px;
+                max-width: 148px;
+                @include media($md){
+                    text-align: center;
+                }
+            }
+
+            &_price {
+                margin-bottom: 29px;
+                font-size: 74px;
+                line-height: 84px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                &__span {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 10px;
+                }
+
+                @include media($xl) {
+                    font-size: 63px;
+                }
+            }
+
+            &_price__span-1 {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 28px;
+
+            }
+
+            &_price__span-2 {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 23px;
+
+            }
+
+            &_features__descr {
+                margin-bottom: 30px;
+            }
+        }
+
+        .card:nth-of-type(3) {
+            margin-right: 0;
+        }
+
+        &_btn {
+            transition: 500ms;
+            padding: 16px 24px;
+            
+        }
+
+
+    }
+}

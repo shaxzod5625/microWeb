@@ -1,0 +1,101 @@
+.subscribe {
+    @include container();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 150px;
+
+
+    @include media($lg) {
+        flex-direction: column;
+    }
+
+    &-right-block {
+        @include media($lg) {
+            margin-bottom: 50px;
+        }
+        @include media($md) {
+            text-align: center;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.1px;
+            color: #252B42;
+            margin-bottom: 17px;
+        }
+
+        &_descr_1 {
+            font-size: 48px;
+            line-height: 55px;
+            color: #252B42;
+            letter-spacing: 0.2px;
+            max-width: 324px;
+            margin-bottom: 35px;
+            @include media($sm){
+                font-size: 44px;
+            }
+        }
+
+        &_descr_2 {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+            color: #252B42;
+            letter-spacing: 0.1px;
+        }
+
+        &_descr_3 {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            color: #374754;
+            letter-spacing: 0.2px;
+            margin-bottom: 36px;
+        }
+
+        &_form__input {
+            background: #F4F4F4;
+            border: 1px solid #E8E8E8;
+            box-sizing: border-box;
+            border-radius: 39px;
+            padding: 19px 39px;
+            outline: none;
+            margin-right: 15px;
+
+            @include media($lg) {
+                margin-right: 5px;
+            }
+            @include media($sm){
+                margin-bottom: 12px;
+            }
+        }
+
+        &_form {
+            @include media($sm){
+                display: flex;
+                flex-direction: column;
+            }
+            &__btn {
+                padding: 19px 38px;
+                background: #2091F9;
+                border-radius: 35px;
+                color: white;
+
+                @include media($lg) {
+                    padding: 17px 15px;
+                }
+
+            }
+        }
+    }
+
+    @include media($md) {
+        &__img {
+            width: 100%;
+        }
+    }
+}
